@@ -3,7 +3,6 @@ package com.example.bitcoin.remote.response
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
-@JsonClass(generateAdapter = true)
 data class MarketPriceChartResponse(
     @Json(name = "description")
     val description: String,
