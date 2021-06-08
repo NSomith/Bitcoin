@@ -1,0 +1,4 @@
+include in xml is used so that one view can be reused many times
+
+ViewStud is used to make the view the space required for the view in runtime and inflate is used
+to show the view
