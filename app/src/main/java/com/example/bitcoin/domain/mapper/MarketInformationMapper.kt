@@ -4,6 +4,9 @@ import androidx.annotation.VisibleForTesting
 import com.example.bitcoin.domain.modal.MarketInformation
 import com.example.bitcoin.domain.modal.MarketInformationChangeStatus
 import com.example.bitcoin.domain.modal.MarketInformationTimespan
+import com.example.bitcoin.extension.changeRateOf
+import com.example.bitcoin.extension.orZero
+import com.example.bitcoin.extension.toCurrency
 import com.example.bitcoin.remote.response.MarketPriceChartResponse
 import com.example.bitcoin.remote.response.MarketPriceValueResponse
 import com.github.mikephil.charting.data.Entry
