@@ -8,3 +8,4 @@ enum class MarketInformationTimespan(val value:String) {
     TIMESPAN_90DAYS("90days"),
     TIMESPAN_1YEAR("365days");
 }
+

@@ -4,6 +4,7 @@ import android.content.Context
 import com.example.bitcoin.R
 import com.example.bitcoin.domain.modal.MarketInformation
 import com.example.bitcoin.domain.modal.MarketInformationChangeStatus
+import com.example.bitcoin.domain.modal.MarketInformationTimespan
 import com.example.bitcoin.extension.getCompatColor
 import com.example.bitcoin.extension.getCompatDrawable
 import com.github.mikephil.charting.data.LineDataSet
@@ -34,4 +35,16 @@ class MarketViewState(
         } else {
             context.getCompatDrawable(R.drawable.background_negative_chart)
         }
+
+    fun isChip1dChecked() = marketInformation.timespan == MarketInformationTimespan.TIMESPAN_1DAYS
+
+    fun isChip7dChecked() = marketInformation.timespan == MarketInformationTimespan.TIMESPAN_7DAYS
+
+    fun isChip30dChecked() = marketInformation.timespan == MarketInformationTimespan.TIMESPAN_30DAYS
+
+    fun isChip60dChecked() = marketInformation.timespan == MarketInformationTimespan.TIMESPAN_60DAYS
+
+    fun isChip90dChecked() = marketInformation.timespan == MarketInformationTimespan.TIMESPAN_90DAYS
+
+    fun isChip1yChecked() = marketInformation.timespan == MarketInformationTimespan.TIMESPAN_1YEAR
 }
